@@ -27,7 +27,7 @@
 
 ---
 
-### 📌 number (숫자 타입)
+## 📌 number (숫자 타입)
 
 자바스크립트는 **64비트 부동소수점** 형식을 사용합니다.
 
@@ -40,7 +40,7 @@ var octal = 0o101; // 8진수
 var hex = 0x41; // 16진수
 ```
 
-===NaN===, ===Infinity===, ===-Infinity===도 모두 ===number=== 타입입니다;
+NaN, Infinity, -Infinity도 모두 number 타입입니다;
 
 ```
 var pInf = 10 / 0;
@@ -80,9 +80,9 @@ var isTrue = true;
 var isFalse = false;
 ```
 
-===null===, ===undefined===, ===0===, ===NaN===, ===""=== (빈 문자열) → false로 평가됨
+null, undefined, 0, NaN, ""(빈 문자열) → false로 평가됨
 
-### undefined
+## undefined
 
 값이 **_할당되지 않은 변수_**에 접근하면 반환되는 값입니다.
 
@@ -91,16 +91,16 @@ var foo;
 console.log(foo); // undefined
 ```
 
-===undefined===는 자바스크립트 엔진이 자동으로 할당하는 값이며, 직접 사용하는 것은 권장되지 않습니다.
+undefined는 자바스크립트 엔진이 자동으로 할당하는 값이며, 직접 사용하는 것은 권장되지 않습니다.
 
-### null
+## null
 
 ```
 var foo = 'Lee';
 foo = null; // 참조 제거
 ```
 
-===null===은 **명시적으로 “비어 있음”을 나타냄**
+null은 **명시적으로 “비어 있음”을 나타냄**
 더 이상 사용되지 않는 메모리는 자바스크립트 엔진이 **가비지 콜렉션(GC)**으로 정리
 
 ### 변수 선언
@@ -113,7 +113,7 @@ const c = 1;
 
 ### 변수의 중복 선언
 
-===var===는 중복 선언 가능하지만 ===let===, ===const===는 불가능
+var는 중복 선언 가능하지만 let, const는 불가능
 
 ```
 var x = 1;
@@ -123,7 +123,7 @@ let y = 1;
 // let y = 2; // 오류
 ```
 
-### 동적 타이핑 (Dynamic Typing)
+## 동적 타이핑 (Dynamic Typing)
 
 자바스크립트는 **타입이 고정되지 않고**런타임 중에 변경될 수 있습니다.
 
@@ -138,9 +138,9 @@ value = true;
 console.log(typeof value); // "boolean"
 ```
 
-### 변수 호이스팅 (Variable Hoisting)
+## 변수 호이스팅 (Variable Hoisting)
 
-===var===로 선언된 변수는 선언이 **끌어올려짐(hoisting).**
+var로 선언된 변수는 선언이 **끌어올려짐(hoisting).**
 
 ```
 console.log(x); // undefined
