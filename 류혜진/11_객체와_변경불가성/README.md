@@ -3,6 +3,9 @@
 
  객체는 **참조 형태**로 전달하고 전달 받는다.
  참조를 통해 공유 되어 있으면 > **참조를 가지고 있는 어떤 장소에서 객체를 변경하면 참조를 공유하는 모든 장소에서 그 영향을 받기 때문에 주의가 필요**하다.
+
+
+
 ┌─────────────┐
 │  변수 a     │──────┐
 └─────────────┘      │
@@ -14,6 +17,7 @@
 ┌─────────────┐      │
 │  변수 b     │──────┘
 └─────────────┘
+
 ![alt text](image.png)
 
 **혜진이의 설명 포인트**
@@ -96,8 +100,8 @@ console.log(user.name);        // Lee
 console.log(user.address.city); // Busan
 ```
 ## Immutable.js (Facebook 제공)  
-- List, Stack, Map, OrderedMap, Set, OrderedSet,Record 등 *영구 불변 데이터 구조(Persistent Immutable Data Structures) * 제공
-- Object.assign과 Object.freeze 방식보다 편리하고 성능 효율적
+- `List`, `Stack`, `Map`, `OrderedMap`, `Set`, `OrderedSet`,`Record` 등 **영구 불변 데이터 구조(Persistent Immutable Data Structures)** 제공
+- `Object.assign`과 `Object.freeze` 방식보다 편리하고 성능 효율적
 - 대규모 애플리케이션에서 상태 관리에 유용
 
 ``` js
