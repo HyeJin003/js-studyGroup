@@ -16,9 +16,9 @@
 └─────────────┘
 ![alt text](image.png)
 
-혜진이의 설명 포인트
-== 변수 안에는 실제 데이터가 들어 있는 게 아니라
-“이 데이터가 저장된 곳이 어디인지 가리키는 주소(pointer)”가 들어가 있다!! ==
+**혜진이의 설명 포인트**
+>변수 안에는 실제 데이터가 들어 있는 게 아니라
+> “이 데이터가 저장된 곳이 어디인지 가리키는 주소(pointer)”가 들어가 있다!! 
 ---
 
 
@@ -29,9 +29,10 @@
 2. **디버깅 쉬움** — 언제, 어디서 바뀌었는지 추적할 필요 없음  
 3. **비교·복제 용이** — 참조 비교로 변경 여부를 쉽게 판단 가능  
 
+
 ---
 
-##  단점
+## 단점
 1. **데이터가 큰 객체일수록** 매번 복사하기 때문에 **메모리 사용 증가**  
 2. **변경이 잦은 경우**에는 **성능 저하** 가능  
 3. **객체가 변경 가능한 데이터를 많이 가지고 있는 경우** 오히려 비효율적일 수 있음  
@@ -95,8 +96,8 @@ console.log(user.name);        // Lee
 console.log(user.address.city); // Busan
 ```
 ## Immutable.js (Facebook 제공)  
-- ==List==, ==Stack==, ==Map==, ==OrderedMap==, ==Set==, ==OrderedSet==, ==Record== 등 *영구 불변 데이터 구조(Persistent Immutable Data Structures) * 제공
-- ==Object.assign==과 ==Object.freeze== 방식보다 편리하고 성능 효율적
+- List, Stack, Map, OrderedMap, Set, OrderedSet,Record 등 *영구 불변 데이터 구조(Persistent Immutable Data Structures) * 제공
+- Object.assign과 Object.freeze 방식보다 편리하고 성능 효율적
 - 대규모 애플리케이션에서 상태 관리에 유용
 
 ``` js
